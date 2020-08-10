@@ -1,5 +1,5 @@
-.normal-title {
-    margin-top: 80px;
+section {
+    padding-top: 100px;
 }
 
 header {
@@ -8,6 +8,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     padding: 16px;
+    padding-right: 80px;
     box-shadow: 1px -2px 10px #cccccc;
     background-color: white;
     position: fixed;
@@ -148,40 +149,15 @@ header nav a {
 }
 
 .float-feature {
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 40%;
-    row-gap: 300px;
-    height: 500px;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    margin-top: 80px;
-    padding: 20px;
+    align-items: center;
 }
 
-.feature {
-    width: 30vw;
-    font-size: 18px;
-    text-align: center;
-    z-index: 10;
-    background-color: #ffffffb6;
-}
-
-.feature-top {
-    position: relative;
-    bottom: 40px;
-}
-
-.float-feature .app-container {
-    position: absolute;
-    height: 30vh;
-    width: 100vw;
-    text-align: center;
-}
-
-.float-feature .app-container img {
-    height: 400px;
-    width: auto;
-    z-index: -1000;
+.float-feature img {
+    width: 80%;
+    height: auto;
 }
 
 .testimonial i {
@@ -278,6 +254,10 @@ footer {
         padding: 0px;
     }
 
+    .main-header p {
+        width: 70%;
+    }
+
     .main-header {
         width: 100vw;
         margin-right: 0px;
@@ -306,21 +286,7 @@ footer {
     }
 
     .avantages-commun {
-        grid-template-columns: auto;
-    }
-
-    .float-feature .app-container img  {
-        width: 80vw;
-        height: auto;
-        margin-top: 50px;
-    }
-
-    .float-feature {
-        column-gap: 10%;
-    }
-
-    .float-feature .feature {
-        width: 40vw;
+        grid-template-columns: 100%;
     }
 
     .contacts {
@@ -347,6 +313,7 @@ footer {
 
     header {
         align-items: flex-start;
+        padding-right: 40px;
     }
 
     .show-nav-item {
@@ -362,25 +329,19 @@ footer {
         background-color: #42A5F5;
     }
 
-    .avantage-illustration .img-route {
-        position: relative;
-        right: 200px;
-        z-index: 1;
-    }
-
-    .avantage-illustration .img-passager, .avantage-illustration .img-conducteur {
-        z-index: 10;
-    }
-
-    .avantage-illustration .img-conducteur {
-        left: 10px;
-    }
-
     .avantages-commun ul{
         padding: 16px;
     }
 
     .avantages-commun ul li {
         font-size: 14px;
+    }
+
+    .float-feature img {
+        width: 100%;
+    }
+
+    .testimonial p {
+        width: 100%;
     }
 }

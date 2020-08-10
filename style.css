@@ -53,6 +53,8 @@
     display: none;
     color: black;
     font-size: 32px;
+    background-color: transparent;
+    border: none;
 }
 
 @media screen and (max-width: 800px) {
