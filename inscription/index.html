@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,800;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Inscription | WebCars - Le Court-voiturage social</title>
 </head>
+
 <body>
-    
+
+    <header>
+        <img src="../assets/img/webcars.png" alt="" class="logo">
+    </header>
+
+    <main>
+        <h1>Inscrivez vous avec votre numéro de téléphone</h1>
+
+        <div class="form">
+            <div class="row">
+                <div class="form-group">
+                    <input id="nom" type="text" name="nom">
+                    <label for="nom">Nom</label>
+                </div>
+                <div class="form-group">
+                    <input id="prenom" type="text" name="prenom">
+                    <label for="prenom">Prénom</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <input id="telephone" type="text" name="telephone">
+                <label for="telephone">Numéro de téléphone</label>
+            </div>
+            <div class="form-group">
+                <input id="email" type="text" name="email">
+                <label for="email">Adresse Email</label>
+            </div>
+
+            <button>S'inscrire</button>
+        </div>
+        <p>En cliquant sur le bouton s'inscrire, vous acceptez la <a href="#">politique de confidentialité</a> et les <a
+                href="#">conditions d'utilisation</a> de WebCars.</p>
+    </main>
+
 </body>
+
 </html>

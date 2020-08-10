@@ -21,9 +21,10 @@
         <img src="./assets/img/webcars.png" alt="Logo Webcars" class="logo">
         <nav>
             <a href="#apropos" class="nav-item">À propos</a>
-            <a href="#produit" class="nav-item">Produits</a>
+            <a href="#produit" class="nav-item">Produit</a>
             <a href="#testimonial" class="nav-item">Témoignages</a>
             <a href="#contact" class="nav-item">Contacts</a>
+            <a href="#equipe" class="nav-item">Equipe</a>
             <a href="./inscription/index.html" class="blue-button nav-item">Je m'inscris</a>
         </nav>
         <button class="humbergers"><i class="fa fa-bars"></i></button>
@@ -31,12 +32,13 @@
 
     <main>
         <section class="main-header">
-            <h1 class="big-title">WebCars</h1>
+            <h1 class="big-title">
+                <span style="color:#03273f;">Web</span><span style="color: #41b1f1;">Cars</span></h1>
             <h2 class="sub-title" style="text-align: center; padding-bottom: 20px; padding-top: 16px;">Adapter le
                 Co-voiturage au contexte africain</h2>
             <p class="text-gray" style="text-align: center; padding: 16px;">Développer une offre de mobilité fiable et
                 variée, mettant le client au centre de
-                nos préoccupations en lui offrant chaque fois, une expérience de trajet exceptionnel. </p>
+                nos préoccupations en lui offrant chaque fois, une expérience de trajet exceptionnelle. </p>
 
             <a href="./inscription/index.html" class="blue-button upper-case">Inscrivez vous</a>
         </section>
@@ -47,18 +49,22 @@
             <div class="avantages">
                 <div class="avantage">
                     <h2>Passagers</h2>
-                    <img src="./assets/img/passager.jpg" alt="Un passager heureux">
+                    <div class="circle">
+                        <img src="./assets/img/passager.jpg" alt="Un passager heureux">
+                    </div>
                     <ul>
                         <li><i class="fas fa-calendar-times"></i> Planifiez vos déplacements à l’avance.</li>
                         <li><i class="fas fa-running"></i>Evitez les retards liés à la pénurie de transports en commun.
                         </li>
-                        <li><i class="fas fa-angry"></i>Evitez les baggares pour accéder à un taxi.</li>
+                        <li><i class="fas fa-angry"></i>Evitez les bagarres pour accéder à un taxi.</li>
                     </ul>
                 </div>
 
                 <div class="avantage conducteur">
                     <h2>Conducteurs</h2>
-                    <img src="./assets/img/conducteur.jpg" alt="Un conducteur serieux">
+                    <div class="circle">
+                        <img src="./assets/img/conducteur.jpg" alt="Un conducteur serieux">
+                    </div>
                     <ul>
                         <li><i class="fas fa-money-bill-alt"></i>Ayez une sources de revenus supplémentaires</li>
                         <li><i class="fas fa-hand-holding-heart"></i>Aidez les gens autour de vous en mettant à leur
@@ -86,14 +92,17 @@
         <section id="produit">
             <h1 class="normal-title">Le Court-voiturage social</h1>
             <p class="text-gray" style="text-align: center; padding: 8px;">
-                Nous avons mis en place un Court-voiturage social. Le Co-voiturage social vous donne la possibilité de
-                faire du Co-voiturage avec des personnes qui ont un liens avec vous: Soit parce que vous travaillez au
-                même endroit, soit parce que vos enfants fréquentent la même école ou vous habitez dans le même quartier
-                ou la même commune, ...
+                Nous avons mis en place un Court-voiturage social. Le Court-voiturage social vous donne la possibilité
+                de
+                faire du Co-voiturage avec des personnes qui ont un lien avec vous: Soit parce que vous travaillez au
+                même endroit, soit parce que vous fréquentez la même école - collège - lycée - université, soit parce
+                que vos enfants fréquentent la même école ou que vous habitez dans le même quartier
+                ou la même commune...
             </p>
 
             <p class="text-gray" style="text-align: center; padding: 8px;">Ainsi vous pouvez faire confiance aux
-                personnes avec qui WebCars vous mets en relation pour passer un trajet en toute sécurité et sérénité</p>
+                personnes avec qui WebCars vous met en relation pour effectuer un trajet en toute sécurité et sérénité.
+            </p>
 
             <div class="float-feature">
                 <img src="./assets/img/webcars-features.png" alt="Fonctionalités de WebCars">
@@ -102,27 +111,31 @@
         </section>
 
         <section id="testimonial">
-            <h1 class="normal-title">WebCars à commencé sur WhatsApp et nous avons des retours
-                positives de nos premiers
+            <h1 class="normal-title">WebCars a commencé sur WhatsApp et nous avons des retours
+                positifs de nos premiers
                 utilisateurs</h1>
 
             <div class="testimonials">
                 <div class="testimonial">
                     <div style="text-align: start;">
-                        <i class="fas fa-quote-left"></i>
+                        <i style="color: #41b1f1;" class="fas fa-quote-left"></i>
                     </div>
                     <p>Je m'appelle Célia,
                         Et mon expérience est vraiment satisfaisante, la conductrice est vraiment sympa.
                         On échange sur tous les sujets sans tabou.
                         Elle est relaxe et vous met toute de suite à l'aise. Je n'hésite pas à recommencer.</p>
-                    <div class="photo">
-                        <img src="./assets/img/temoin_celia.jpeg" alt="Photo de l'utilisateur" class="circle-avatar">
+
+                    <div class="photo-cn">
+                        <div class="photo">
+                            <img src="./assets/img/temoin_celia.jpeg" alt="Photo de l'utilisateur"
+                                class="circle-avatar">
+                        </div>
                     </div>
                 </div>
 
                 <div class="testimonial">
                     <div style="text-align: start;">
-                        <i class="fas fa-quote-left"></i>
+                        <i style="color: #41b1f1;" class="fas fa-quote-left"></i>
                     </div>
                     <p>Ma première expérience s'est bien déroulée.
                         La conductrice a été coopérante, accueillante et très matinale surtout. Elle est venue à l'heure
@@ -130,8 +143,10 @@
                         savoir que le véhicule nous prend à une certaine heure, on se ménage à y être bien avant. Ce qui
                         m'a permis d'arriver au travail avant l'heure et avant tous mes collaborateurs.
                         Bravo et bonne continuation à l'équipe WebCars.</p>
-                    <div class="photo">
-                        <img src="./assets/img/temoin_aude.jpeg" alt="Photo de l'utilisateur" class="circle-avatar">
+                    <div class="photo-cn">
+                        <div class="photo">
+                            <img src="./assets/img/temoin_aude.jpeg" alt="Photo de l'utilisateur" class="circle-avatar">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -143,11 +158,11 @@
             <div class="contacts">
                 <div class="contact-form">
                     <h2>Nos coordonnées</h2>
-                    <p>Nous sommes situé à, Rue Pecqueur,
-                        <strong>Derrière l'immeuble premium BGFi, SING SA, espace coworking bureau 15</strong>
+                    <p><i class="fas fa-map-marker-alt"></i> Rue Pecqueur, Derrière l'immeuble premium BGFi, SING SA,
+                        espace coworking bureau 15
                     </p>
-                    <a href="mailto:houlahoulaj@gmail.com">houlahoulaj@gmail.com</a>
-                    <p>+ 241 077 14 57 20</p>
+                    <a href="mailto:contact@web-cars.ga"><i class="fas fa-envelope"></i> contact@web-cars.ga</a>
+                    <p><i class="fas fa-phone"></i> + 241 077 14 57 20</p>
                 </div>
 
                 <div class="contact-social">
@@ -163,6 +178,36 @@
                         <a href="https://www.instagram.com/webcars7?r=nametag" style="color: #8A3AB9;"><i
                                 class="fab fa-instagram-square"></i></a>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="equipe">
+            <h1 class="normal-title">Qui sommes nous ?</h1>
+            <p>Nous sommes une équipe de trois professionnels appartenant à des secteurs de compétences variées. Nous
+                avons été confrontés aux différentes problématiques de transport et nous avons donc imaginé la solution
+                WebCars.</p>
+            <div class="equipes">
+                <div class="person">
+                    <div class="photo-person"><img src="./assets/img/placeholder.jpg" alt="Photo membre"></div>
+                    <p class="nom">Jean Arsène HOULA-HOULA</p>
+                    <p class="profil">Ingénieur financier</p>
+                    <p class="role">CEO & Co-Fondateur chez WebCars</p>
+                    <p class="email">ja.houlahoula@web-cars.ga</p>
+                </div>
+                <div class="person">
+                    <div class="photo-person"><img src="./assets/img/placeholder.jpg" alt="Photo membre"></div>
+                    <p class="nom">Jean Arsène HOULA-HOULA</p>
+                    <p class="profil">Ingénieur financier</p>
+                    <p class="role">CEO & Co-Fondateur chez WebCars</p>
+                    <p class="email">ja.houlahoula@web-cars.ga</p>
+                </div>
+                <div class="person">
+                    <div class="photo-person"><img src="./assets/img/placeholder.jpg" alt="Photo membre"></div>
+                    <p class="nom">Jean Arsène HOULA-HOULA</p>
+                    <p class="profil">Ingénieur financier</p>
+                    <p class="role">CEO & Co-Fondateur chez WebCars</p>
+                    <p class="email">ja.houlahoula@web-cars.ga</p>
                 </div>
             </div>
         </section>
