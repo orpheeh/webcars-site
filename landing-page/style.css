@@ -1,5 +1,5 @@
 .normal-title {
-    margin-top: 40px;
+    margin-top: 80px;
 }
 
 header {
@@ -38,6 +38,7 @@ header nav a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 90vh;
 }
 
 .main-header p {
@@ -85,7 +86,7 @@ header nav a {
 
 .avantages-commun {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 40%;
     align-items: flex-start;
     padding: 20px;
     margin-top: 80px;
@@ -359,5 +360,27 @@ footer {
 
     .show-nav-item .blue-button {
         background-color: #42A5F5;
+    }
+
+    .avantage-illustration .img-route {
+        position: relative;
+        right: 200px;
+        z-index: 1;
+    }
+
+    .avantage-illustration .img-passager, .avantage-illustration .img-conducteur {
+        z-index: 10;
+    }
+
+    .avantage-illustration .img-conducteur {
+        left: 10px;
+    }
+
+    .avantages-commun ul{
+        padding: 16px;
+    }
+
+    .avantages-commun ul li {
+        font-size: 14px;
     }
 }

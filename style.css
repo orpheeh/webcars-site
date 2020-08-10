@@ -67,6 +67,7 @@
     }
 
     .humbergers {
+        padding-right: 16px;
         display: block;
     }
 }
