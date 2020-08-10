@@ -42,11 +42,11 @@
 .normal-title {
     font-size: 48px;
     padding: 16px;
+    text-align: center;
 }
 
 .large-title {
     width: 70vw;
-
 }
 
 .humbergers {

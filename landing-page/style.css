@@ -56,6 +56,13 @@ header nav a {
     padding: 20px;
 }
 
+.avantage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .avantage h2 {
     text-align: center;
     font-size: 24px;
@@ -120,10 +127,17 @@ header nav a {
     left: 10px;
 }
 
+.avantage-illustration {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
 .avantage-illustration .img-route {
     z-index: 10;
-    height: 300px;
-    width: auto;
+    height: auto;
+    width: 80%;
 }
 
 .avantages-commun ul {
@@ -160,6 +174,13 @@ header nav a {
     height: auto;
 }
 
+.testimonials {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
 .testimonial i {
     font-size: 24px;
     color: #777777;
@@ -167,27 +188,25 @@ header nav a {
 
 .testimonial {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     padding: 40px;
 }
 
 .testimonial .photo img{
-    width: 100px;
+    width: 50px;
     height: auto;
 }
 
 .testimonial p {
-    text-align: center;
+    text-align: start;
     width: 80%;
     padding: 20px;
     color: #777777;
 }
 
 .testimonial .photo {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border-radius: 400px;
     overflow: hidden;
 
@@ -245,6 +264,11 @@ footer {
     margin-top: 80px;
 }
 
+.avantage img {
+    height: 200px;
+    width: auto;
+}
+
 @media screen and (max-width: 800px) {
 
     main {
@@ -269,6 +293,10 @@ footer {
         justify-content: center;
         align-items: center;
         width: 100%;
+    }
+
+    .testimonials {
+        grid-template-columns: auto;
     }
 
     .avantages h2 {
@@ -343,5 +371,14 @@ footer {
 
     .testimonial p {
         width: 100%;
+    }
+
+    .avantages-commun ul {
+        padding-top: 20px;
+    }
+
+    .contacts {
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
