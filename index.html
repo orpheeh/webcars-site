@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./landing-page/style.css">
     <link rel="stylesheet" href="style.css">
     <title>WebCars - Le Court-voiturage social</title>
@@ -32,7 +32,7 @@
 
     <main>
         <section class="main-header">
-            <h1 class="big-title">
+            <h1 data-aos="zoom-in" class="big-title">
                 <span style="color:#03273f;">Web</span><span style="color: #41b1f1;">Cars</span></h1>
             <h2 class="sub-title" style="text-align: center; padding-bottom: 20px; padding-top: 16px;">Adapter le
                 Co-voiturage au contexte africain</h2>
@@ -40,11 +40,11 @@
                 variée, mettant le client au centre de
                 nos préoccupations en lui offrant chaque fois, une expérience de trajet exceptionnelle. </p>
 
-            <a href="./inscription/index.html" class="blue-button upper-case">Inscrivez vous</a>
+            <a data-aos="fade-up" href="./inscription/index.html" class="blue-button upper-case">Inscrivez vous</a>
         </section>
 
         <section id="apropos">
-            <h1 class="normal-title">Pourquoi faire du Co-voiturage ?</h1>
+            <h1 data-aos="fade-up" class="normal-title">Pourquoi faire du Co-voiturage ?</h1>
 
             <div class="avantages">
                 <div class="avantage">
@@ -52,7 +52,7 @@
                     <div class="circle">
                         <img src="./assets/img/passager.jpg" alt="Un passager heureux">
                     </div>
-                    <ul>
+                    <ul data-aos="fade-left">
                         <li><i class="fas fa-calendar-times"></i> Planifiez vos déplacements à l’avance.</li>
                         <li><i class="fas fa-running"></i>Evitez les retards liés à la pénurie de transports en commun.
                         </li>
@@ -65,7 +65,7 @@
                     <div class="circle">
                         <img src="./assets/img/conducteur.jpg" alt="Un conducteur serieux">
                     </div>
-                    <ul>
+                    <ul data-aos="fade-right">
                         <li><i class="fas fa-money-bill-alt"></i>Ayez une sources de revenus supplémentaires</li>
                         <li><i class="fas fa-hand-holding-heart"></i>Aidez les gens autour de vous en mettant à leur
                             disposition votre voiture.</li>
@@ -79,7 +79,7 @@
                     <img src="./assets/img/route.jpg" alt="Sur la route" class="img-route">
                 </div>
 
-                <ul>
+                <ul data-aos="zoom-in">
                     <li><i class="fas fa-check-circle"></i>Assurez votre sécurité</li>
                     <li><i class="fas fa-check-circle"></i>Facilitez vos déplacements</li>
                     <li><i class="fas fa-check-circle"></i>Reduissez votre temps de route</li>
@@ -90,7 +90,7 @@
         </section>
 
         <section id="produit">
-            <h1 class="normal-title">Le Court-voiturage social</h1>
+            <h1 data-aos="fade-up" class="normal-title">Le Court-voiturage social</h1>
             <p class="text-gray" style="text-align: center; padding: 16px;">
                 Nous avons mis en place un Court-voiturage social. Le Court-voiturage social vous donne la possibilité
                 de
@@ -111,12 +111,12 @@
         </section>
 
         <section id="testimonial">
-            <h1 class="normal-title">WebCars a commencé sur WhatsApp et nous avons des retours
+            <h1 data-aos="fade-up" class="normal-title">WebCars a commencé sur WhatsApp et nous avons des retours
                 positifs de nos premiers
                 utilisateurs</h1>
 
             <div class="testimonials">
-                <div class="testimonial">
+                <div class="testimonial" data-aos="fade-right">
                     <div style="text-align: start;">
                         <i style="color: #41b1f1;" class="fas fa-quote-left"></i>
                     </div>
@@ -133,7 +133,7 @@
                     </div>
                 </div>
 
-                <div class="testimonial">
+                <div class="testimonial" data-aos="fade-left">
                     <div style="text-align: start;">
                         <i style="color: #41b1f1;" class="fas fa-quote-left"></i>
                     </div>
@@ -153,7 +153,7 @@
         </section>
 
         <section id="contact">
-            <h1 class="normal-title">N’hésitez pas à nous contacter</h1>
+            <h1 data-aos="fade-up" class="normal-title">N’hésitez pas à nous contacter</h1>
 
             <div class="contacts">
                 <div class="contact-form">
@@ -183,26 +183,27 @@
         </section>
 
         <section id="equipe">
-            <h1 class="normal-title" style="padding-bottom: 80px;">Qui sommes nous ?</h1>
-            <p style="color: #777777;">Nous sommes une équipe de trois professionnels appartenant à des secteurs de compétences variées. Nous
+            <h1 data-aos="fade-up" class="normal-title" style="padding-bottom: 80px;">Qui sommes nous ?</h1>
+            <p style="color: #777777;">Nous sommes une équipe de trois professionnels appartenant à des secteurs de
+                compétences variées. Nous
                 avons été confrontés aux différentes problématiques de transport et nous avons donc imaginé la solution
                 WebCars.</p>
             <div class="equipes">
-                <div class="person">
+                <div class="person"data-aos="fade-left" >
                     <div class="photo-person"><img src="./assets/img/placeholder.jpg" alt="Photo membre"></div>
                     <p class="nom">Jean Arsène HOULA-HOULA</p>
                     <p class="profil">Ingénieur financier</p>
                     <p class="role">CEO & Co-Fondateur chez WebCars</p>
                     <p class="email">ja.houlahoula@web-cars.ga</p>
                 </div>
-                <div class="person">
+                <div class="person" data-aos="fade-right">
                     <div class="photo-person"><img src="./assets/img/placeholder.jpg" alt="Photo membre"></div>
                     <p class="nom">Jean Arsène HOULA-HOULA</p>
                     <p class="profil">Ingénieur financier</p>
                     <p class="role">CEO & Co-Fondateur chez WebCars</p>
                     <p class="email">ja.houlahoula@web-cars.ga</p>
                 </div>
-                <div class="person">
+                <div class="person" data-aos="fade-left">
                     <div class="photo-person"><img src="./assets/img/placeholder.jpg" alt="Photo membre"></div>
                     <p class="nom">Jean Arsène HOULA-HOULA</p>
                     <p class="profil">Ingénieur financier</p>
@@ -217,7 +218,13 @@
         <p class="cpright">&copy; 2020, Milka & Orphée</p>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./landing-page/script.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000
+        });
+    </script>
 </body>
 
 </html>
