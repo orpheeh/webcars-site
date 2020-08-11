@@ -6,7 +6,7 @@ async function postUser() {
 
     const nom = document.querySelector('input[name="nom"]').value;
     const prenom = document.querySelector('input[name="prenom"]').value;
-    const telephone = document.querySelector('input[name="telephone"]').value;
+    let telephone = document.querySelector('input[name="telephone"]').value;
     const email = document.querySelector('input[name="email"]').value;
 
     document.querySelector('label[for="email"]').innerHTML = "";
@@ -14,7 +14,7 @@ async function postUser() {
 
     let isCorrect = true;
     if (!validatePhoneNumberFromGabon(telephone)) {
-        document.querySelector('label[for="telephone"]').innerHTML = "Numéro de téléhone incorrecte"
+        document.querySelector('label[for="telephone"]').innerHTML = "Numéro de téléhone doit être de la forme 0xx yyy zzz"
         isCorrect = false;
     }
     if (!validateEmail(email)) {
@@ -23,8 +23,8 @@ async function postUser() {
     }
 
     if (isCorrect) {
+        telephone = ("+241" + telephone).replace(/ /g, "");
         const isSave = await register({ nom, prenom, telephone, email });
-
         if (isSave) {
             //Afficher la page de demande de code
             feedback("");
@@ -37,6 +37,7 @@ async function postUser() {
 }
 
 async function register(data) {
+    console.log(data);
     const res = await fetch(url + "/users", {
         method: "POST",
         headers: { "content-type": "application/json" },
