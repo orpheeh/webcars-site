@@ -137,7 +137,7 @@ header nav a {
 .avantage-illustration .img-route {
     z-index: 10;
     height: auto;
-    width: 80%;
+    width: 50%;
 }
 
 .avantages-commun ul {
@@ -368,6 +368,10 @@ footer {
         overflow-x: hidden;
         margin: 0px;
         padding: 0px;
+    }
+
+    .avantage-illustration .img-route {
+        width: 100%;
     }
 
     .main-header p {
