@@ -361,6 +361,11 @@ footer {
     padding-top: 40px;
 }
 
+.equipes .linkedin {
+    padding: 16px;
+    font-size: 32px;
+}
+
 @media screen and (max-width: 800px) {
 
     main {
