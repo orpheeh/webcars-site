@@ -1,0 +1,495 @@
+section {
+    padding-top: 100px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 16px;
+    padding-right: 80px;
+    box-shadow: 1px -2px 10px #cccccc;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100vw;
+}
+
+header nav {
+    flex-grow: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 16px;
+    align-items: center;
+}
+
+header nav a {
+    color: #000000;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+.main-header {
+    padding-top: 160px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.main-header p {
+    width: 70%;
+}
+
+.main-header .blue-button {
+    padding: 16px 32px;
+}
+
+.avantages {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px;
+}
+
+.avantage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.avantage h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #42A5F5;
+    padding: 20px;
+}
+
+.avantage ul {
+    list-style-type: none;
+}
+
+.avantage ul i {
+    color: #42A5F5;
+    padding-right: 20px;
+    font-size: 24px;
+}
+
+.avantage ul li {
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.conducteur h2, .conducteur ul i {
+    color: #455A64;
+}
+
+.avantages-commun {
+    display: grid;
+    grid-template-columns: 50% 40%;
+    align-items: flex-start;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.avantage-illustration img {
+    width: 250px;
+    height: auto;
+}
+
+.avantage-illustration .left-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.avantage-illustration {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-conducteur {
+    position: relative;
+    bottom: 100px;
+    left: 80px;
+}
+
+.img-passager {
+    position: relative;
+    bottom: 60px;
+    left: 10px;
+}
+
+.avantage-illustration {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.avantage-illustration .img-route {
+    z-index: 10;
+    height: auto;
+    width: 50%;
+}
+
+.avantages-commun ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 40px;
+}
+
+.avantages-commun ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 16px;
+    font-size: 18px;
+    align-items: center;
+}
+
+.avantages-commun ul li i {
+    color: green;
+    padding-right: 8px;
+}
+
+.float-feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.float-feature img {
+    width: 80%;
+    height: auto;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.avantage .circle {
+    width: 250px;
+    height: 200px;
+    border-radius: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-cn {
+    text-align: center;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.photo {
+    border: 4px solid #42A5F5;
+}
+
+.testimonial i {
+    font-size: 24px;
+    color: #777777;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.testimonial .photo img{
+    width: 100px;
+    height: auto;
+}
+
+.testimonial p {
+    text-align: start;
+    width: 80%;
+    padding: 20px;
+    color: #777777;
+}
+
+.contact-form p, .contact-form a{
+    padding: 16px 0px;
+}
+
+.testimonial .photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 400px;
+    overflow: hidden;
+
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.contacts input, textarea {
+    border: 1px solid #777777;
+    border-radius: 10px;
+    padding: 16px 8px;
+    margin: 8px;
+}
+
+.contacts .contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+}
+
+.contact-form .blue-button {
+    text-align: center;
+    width: fit-content;
+    margin: 16px;
+}
+
+h2 {
+    font-weight: lighter;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.socials i {
+    font-size: 48px;
+}
+
+.contact-form i {
+    color: #42A5F5;
+    padding-right: 8px;
+}
+
+.contact-form a, .contact-form p {
+    color:#03273f;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+}
+
+footer {
+    background-color: #484848;
+    color: #cccccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px;
+    margin-top: 80px;
+}
+
+.avantage img {
+    height: 200px;
+    width: auto;
+}
+
+.person img {
+    width: 200px;
+    height: auto;
+}
+
+.photo-person {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 200px;
+    border: 4px solid #41b1f1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.person .nom {
+    font-weight: 500;
+    font-size: 18px;
+    color: #41b1f1;
+}
+
+#equipe p {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.person .profil {
+    padding-bottom: 16px;
+    color: #777777;
+}
+
+.person .role {
+    color: #03273f;
+}
+.equipes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.equipes .linkedin {
+    padding: 16px;
+    font-size: 32px;
+}
+
+@media screen and (max-width: 800px) {
+
+    main {
+        width: 100vw;
+        overflow-x: hidden;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .avantage-illustration .img-route {
+        width: 100%;
+    }
+
+    .main-header p {
+        width: 70%;
+    }
+
+    .main-header {
+        width: 100vw;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .avantages {
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .main-header{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .main-header p {
+        width: 90%;
+    }
+
+    .testimonials {
+        grid-template-columns: auto;
+    }
+
+    .avantages h2 {
+        text-align: start;
+        margin-top: 20px;
+    }
+
+    .avantage {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .large-title {
+        width: 100%;
+    }
+
+    .avantages-commun {
+        grid-template-columns: 100%;
+    }
+
+    .contacts {
+        grid-template-columns: auto;
+    }
+
+    .contact-social {
+        padding: 40px;
+    }
+
+    .header nav{
+        flex-direction: column;
+    }
+
+    nav .nav-item {
+        display: none;
+    }
+
+    .show-nav-item .nav-item {
+        display: block;
+        width: 100%;
+        padding: 20px;
+    }
+
+    header {
+        align-items: flex-start;
+        padding-right: 40px;
+    }
+
+    .show-nav-item {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .show-nav-item a {
+        background-color: white;
+    }
+
+    .show-nav-item .blue-button {
+        background-color: #42A5F5;
+    }
+
+    .avantages-commun ul{
+        padding: 16px;
+    }
+
+    .avantages-commun ul li {
+        font-size: 14px;
+    }
+
+    .float-feature img {
+        width: 100%;
+    }
+
+    .testimonial p {
+        width: 100%;
+    }
+
+    .avantages-commun ul {
+        padding-top: 20px;
+    }
+
+    .contacts {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}

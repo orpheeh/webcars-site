@@ -1,0 +1,126 @@
+header {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.logo {
+    width: 200px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 2.1em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group {
+    padding: 16px;
+}
+
+.form-group label {
+    font-size: 12px;
+    font-weight: 500;
+    color: red;
+}
+
+.form-group input {
+    border: none;
+    background-color: #efefef;
+    padding: 14px 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.form .row {
+    width: 50%;
+}
+
+.form .form-group {
+    width: 50%;
+}
+
+.form-group input:focus {
+    border: 2px solid #41b1f1;
+    outline: none;
+}
+
+#submit {
+    font-size: 18px;
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: center;
+    font-size: 12px;
+    padding: 20px;
+}
+
+div.hide, h1.hide {
+    display: none;
+}
+
+.success h1 {
+    color: #41b1f1;
+    padding: 80px;
+    font-size: 24px;
+}
+
+.success em {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+.success h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials i {
+    font-size: 40px;
+    padding: 8px;
+}
+
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 18px;
+    }
+    .success h1 {
+        padding: 20px;
+        font-size: 18px;
+    }
+    .success {
+        padding: 16px;
+    }
+    .form .row {
+        width: 95%;
+    }
+    .form .form-group {
+        width: 95%;
+    }
+}
