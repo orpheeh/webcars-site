@@ -3,6 +3,8 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: "Work Sans", sans-serif;
+    scroll-behavior: smooth;
+    transition: 0.4s;
 }
 
 .logo {
@@ -65,8 +67,9 @@
 
 .normal-title {
     font-size: 48px;
-    padding: 16px;
+    padding: 1rem;
     text-align: center;
+    padding-top: 2rem;
 }
 
 .large-title {

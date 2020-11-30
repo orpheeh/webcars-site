@@ -3,7 +3,7 @@ html {
 }
 
 section {
-    padding-top: 100px;
+    padding-top: 2rem;
 }
 
 header {
@@ -42,7 +42,7 @@ header nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 90vh;
 }
 

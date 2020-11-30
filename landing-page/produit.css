@@ -37,7 +37,12 @@
     min-width: 300px;
 }
 
+.module p {
+    font-size: 14px;
+}
+
 .module {
+    margin-top: 5rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -51,6 +56,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(#ffffff, #bbdaf3, #f3f3f3cc, #ffffff);
 }
 
 .module  h2 {
