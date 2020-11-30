@@ -1,0 +1,27 @@
+.presentation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.court-voiturage-social {
+  width: 30%;  
+  padding: 1rem;
+  min-width: 300px;
+}
+
+.court-voiturage-social > p {
+    text-align: justify;
+    padding: 0.4rem;
+    color: #444444;
+}
+
+.float-feature {
+    width: 50%;
+    min-width: 300px;
+}
+
+.float-feature img {
+    width: 100%;
+}
