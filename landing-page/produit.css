@@ -25,3 +25,36 @@
 .float-feature img {
     width: 100%;
 }
+
+.module > img {
+    width: 200px;
+    max-width: 100%;
+}
+
+.module > div {
+    width: 40%;
+    padding: 2rem;
+    min-width: 300px;
+}
+
+.module {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.modules {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.module  h2 {
+    font-weight: bold;
+    padding-bottom: 1rem;
+    color: #42A5F5;
+}
