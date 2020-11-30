@@ -44,6 +44,9 @@
     margin: 1rem;
     display: inline-block;
     text-align: center;
+    width: 300px;
+    max-width: 90%;
+    font-size: 14px;
 }
 
 .upper-case {
@@ -56,13 +59,14 @@
 }
 
 .sub-title {
-    font-size: 24px;
+    font-size: 18px;
     color: #444444;
     font-weight: normal;
 }
 
 .text-gray {
     color: #777777;
+    font-size: 12px;
 }
 
 .normal-title {
