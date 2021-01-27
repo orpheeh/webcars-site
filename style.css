@@ -35,6 +35,33 @@ main {
     display: inline-block;
 }
 
+.blue-dark {
+    background-color: #03273f;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.button-cn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.button-cn * {
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    max-width: 90%;
+    font-size: 14px;
+}
+
 .upper-case {
     text-transform: uppercase;
 }
@@ -45,23 +72,26 @@ main {
 }
 
 .sub-title {
-    font-size: 24px;
+    font-size: 18px;
     color: #444444;
     font-weight: normal;
 }
 
 .text-gray {
     color: #777777;
+    font-size: 14px;
 }
 
 .normal-title {
     font-size: 48px;
-    padding: 16px;
+    padding: 1rem;
     text-align: center;
+    padding-top: 2rem;
 }
 
 .large-title {
     width: 70vw;
+    padding-top: 4rem;
 }
 
 p {

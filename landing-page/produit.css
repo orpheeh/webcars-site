@@ -1,0 +1,84 @@
+.presentation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.court-voiturage-social {
+  width: 30%;  
+  padding: 1rem;
+  min-width: 300px;
+}
+
+.court-voiturage-social > p {
+    text-align: justify;
+    padding: 0.4rem;
+    color: #444444;
+}
+
+.float-feature {
+    width: 50%;
+    min-width: 300px;
+}
+
+.float-feature img {
+    width: 100%;
+}
+
+.module > .img-cn {
+    width: 40%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.module a {
+    text-decoration: none;
+    color: #42A5F5;
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border: 2px solid #42A5F5;
+    border-radius: 20px;
+}
+
+.module > .img-cn img {
+    width: 200px;
+}
+
+.module > div {
+    width: 40%;
+    padding: 0.5rem;
+    min-width: 300px;
+}
+
+.module p {
+    font-size: 14px;
+    padding-bottom: 1rem;
+}
+
+.module {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 4rem;
+}
+
+.modules {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#ffffff, #eeeeee, #ffffff);
+}
+
+.module  h2 {
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
