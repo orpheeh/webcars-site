@@ -13,7 +13,7 @@ header {
     padding: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 main {
@@ -41,9 +41,15 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
+a {
+    text-decoration: none;
+    color: #42A5F5;
+    font-weight: 500;
+}
+
 h3 {
     padding-top: 1rem;
-    color: #444444;
+    font-weight: 700;
 }
 
 p {
@@ -57,6 +63,10 @@ ul {
 
 li {
     padding: 0.5rem;
+}
+
+p {
+    line-height: 1.7em;
 }
 
 table {

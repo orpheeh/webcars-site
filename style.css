@@ -106,6 +106,7 @@ p {
     }
     
     .humbergers {
+        display: block;
         background-color: transparent;
         z-index: 99999999;
         border: none;
