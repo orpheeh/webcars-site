@@ -1,495 +1,283 @@
+html {
+    background-color: #fafafa;
+}
+
+.main-container {
+    background: #FFFFFFcc;
+}
+
 section {
-    padding-top: 100px;
+    padding-top: 6rem;
 }
 
 header {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    padding: 16px;
-    padding-right: 80px;
-    box-shadow: 1px -2px 10px #cccccc;
-    background-color: white;
+    padding: 1.5rem;
+    box-shadow: 1px 2px 20px #00000086;
     position: fixed;
     top: 0;
-    z-index: 100;
+    left: 0;
     width: 100vw;
+    z-index: 9999999999999;
+    background-color: white;
 }
 
 header nav {
-    flex-grow: 5;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    padding: 16px;
     align-items: center;
+    justify-content: space-evenly;
 }
 
-header nav a {
-    color: #000000;
+header nav .nav-item {
+    padding: 0.5rem;
+    color: #777777;
     text-decoration: none;
-    padding-right: 20px;
+}
+
+header nav .blue-button {
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+header .show-nav-item {
+    flex-direction: column;
 }
 
 .main-header {
-    padding-top: 160px;
-    padding-bottom: 40px;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    padding: 2rem;
+    height: 100vh;
 }
 
 .main-header p {
-    width: 70%;
-}
-
-.main-header .blue-button {
-    padding: 16px 32px;
+    text-align: center;
 }
 
 .avantages {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .avantage {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: 40%;
+    min-width: 400px;
     align-items: center;
-}
-
-.avantage h2 {
-    text-align: center;
-    font-size: 24px;
-    color: #42A5F5;
-    padding: 20px;
-}
-
-.avantage ul {
-    list-style-type: none;
-}
-
-.avantage ul i {
-    color: #42A5F5;
-    padding-right: 20px;
-    font-size: 24px;
-}
-
-.avantage ul li {
-    padding: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.conducteur h2, .conducteur ul i {
-    color: #455A64;
-}
-
-.avantages-commun {
-    display: grid;
-    grid-template-columns: 50% 40%;
-    align-items: flex-start;
-    padding: 20px;
-    margin-top: 80px;
-}
-
-.avantage-illustration img {
-    width: 250px;
-    height: auto;
-}
-
-.avantage-illustration .left-img {
-    display: flex;
-    flex-direction: column;
-}
-
-.avantage-illustration {
-    display: flex;
-    flex-direction: row;
-}
-
-.img-conducteur {
-    position: relative;
-    bottom: 100px;
-    left: 80px;
-}
-
-.img-passager {
-    position: relative;
-    bottom: 60px;
-    left: 10px;
-}
-
-.avantage-illustration {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
-}
-
-.avantage-illustration .img-route {
-    z-index: 10;
-    height: auto;
-    width: 50%;
-}
-
-.avantages-commun ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 40px;
-}
-
-.avantages-commun ul li {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding: 16px;
-    font-size: 18px;
-    align-items: center;
-}
-
-.avantages-commun ul li i {
-    color: green;
-    padding-right: 8px;
-}
-
-.float-feature {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.float-feature img {
-    width: 80%;
-    height: auto;
-}
-
-.testimonials {
-    display: grid;
-    grid-template-columns: 48% 48%;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-
-.avantage .circle {
-    width: 250px;
-    height: 200px;
-    border-radius: 40px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.photo-cn {
-    text-align: center;
-    width: 70%;
-    display: flex;
-    justify-content: center;
-}
-
-.photo {
-    border: 4px solid #42A5F5;
-}
-
-.testimonial i {
-    font-size: 24px;
-    color: #777777;
-}
-
-.testimonial {
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-}
-
-.testimonial .photo img{
-    width: 100px;
-    height: auto;
-}
-
-.testimonial p {
-    text-align: start;
-    width: 80%;
-    padding: 20px;
-    color: #777777;
-}
-
-.contact-form p, .contact-form a{
-    padding: 16px 0px;
-}
-
-.testimonial .photo {
-    width: 100px;
-    height: 100px;
-    border-radius: 400px;
-    overflow: hidden;
-
-}
-
-.contacts {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-.contacts input, textarea {
-    border: 1px solid #777777;
-    border-radius: 10px;
-    padding: 16px 8px;
-    margin: 8px;
-}
-
-.contacts .contact-form {
-    display: flex;
-    flex-direction: column;
-    padding: 0px 40px;
-}
-
-.contact-form .blue-button {
-    text-align: center;
-    width: fit-content;
-    margin: 16px;
-}
-
-h2 {
-    font-weight: lighter;
-}
-
-.socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 20px;
-}
-
-.socials i {
-    font-size: 48px;
-}
-
-.contact-form i {
-    color: #42A5F5;
-    padding-right: 8px;
-}
-
-.contact-form a, .contact-form p {
-    color:#03273f;
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    align-items: center;
-}
-
-footer {
-    background-color: #484848;
-    color: #cccccc;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 40px;
-    margin-top: 80px;
+    padding: 1rem;
 }
 
 .avantage img {
     height: 200px;
-    width: auto;
+    max-width: 100%;
+    border-radius: 1rem;
 }
 
-.person img {
-    width: 200px;
-    height: auto;
+.avantage ul {
+    list-style-type: none;
+    padding: 2rem 0rem;
 }
 
-.photo-person {
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    border-radius: 200px;
-    border: 4px solid #41b1f1;
+.avantage ul li {
     display: flex;
     flex-direction: row;
+    padding: 1rem;
+    font-size: 1.1em;
+}
+
+.avantage ul li i {
+    padding-right: 0.5rem;
+    display: inline-block;
+    font-size: 1.5em;
+    color: #42A5F5;
+}
+
+.avantage h2 {
+    text-align: center;
+    padding: 1rem;
+    font-weight: 400;
+    color: #42A5F5;
+}
+
+.conducteur h2, .conducteur ul li i {
+    color: #455A64;
+} 
+
+.avantages-commun {
+    background: linear-gradient(#4242427c, #4242427c), url(../assets/img/route.jpg);
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 
-.person {
+.avantages-commun ul li {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 40px;
+    flex-direction: row;
 }
 
-.person .nom {
-    font-weight: 500;
-    font-size: 18px;
-    color: #41b1f1;
+.avantages-commun ul li i {
+    color: white;
+    padding-right: 0.5rem;
 }
 
-#equipe p {
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+.avantages-commun ul {
+    width: 90%;
+    list-style-type: none;
+    padding: 1rem;
 }
 
-.person .profil {
-    padding-bottom: 16px;
+.photo-cn {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 150px;
+    border: 4px solid #42A5F5;
+}
+
+.photo-cn img {
+    width: 100%;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.testimonial {
+    width: 30%;
+    min-width: 300px;
+    padding: 1rem;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.contacts > div {
+    width: 40%;
+    min-width: 300px;
+}
+
+.contacts > div h2 {
+    padding: 1rem 0rem;
+    font-weight: 300;
+}
+
+.contacts > .contact-form p, .contacts .contact-form a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    padding: 1rem;
     color: #777777;
+    text-align: left;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.person .role {
-    color: #03273f;
+.contacts > .contact-form p i, .contacts .contact-form a i {
+    color: #42A5F5;
+    padding-right: 1rem;
+    display: inline-block;
+    font-size: 1.5em;
 }
+
+.socials {
+    font-size: 2em;
+}
+
 .equipes {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 20px;
-    padding-top: 40px;
+    padding: 1rem;
 }
 
-.equipes .linkedin {
-    padding: 16px;
-    font-size: 32px;
+.person {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
 
-@media screen and (max-width: 800px) {
+.person p {
+    padding: 0.1rem;
+    text-align: center;
+}
 
-    main {
-        width: 100vw;
-        overflow-x: hidden;
-        margin: 0px;
-        padding: 0px;
+.person .nom {
+    color: #42A5F5;
+    font-size: 1.5em;
+}
+
+.person .role {
+    font-weight: bold;
+    padding-top: 0.5rem;
+}
+
+.person .profil {
+    color: #777777;
+}
+
+.person a {
+    font-size: 2em;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #444444;
+    margin-top: 6rem;
+    padding: 1rem;
+}
+
+footer a, footer p {
+    color: #fafafa;
+}
+
+@media (max-width: 800px) {
+    
+    header nav {
+        height: 0;
+        width: 0;
+        overflow: hidden;
     }
-
-    .avantage-illustration .img-route {
-        width: 100%;
-    }
-
-    .main-header p {
-        width: 70%;
-    }
-
-    .main-header {
-        width: 100vw;
-        margin-right: 0px;
-        margin-left: 0px;
-    }
-
-    .avantages {
-        grid-template-columns: auto;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-
-
-    .main-header{
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .main-header p {
-        width: 90%;
-    }
-
-    .testimonials {
-        grid-template-columns: auto;
-    }
-
-    .avantages h2 {
-        text-align: start;
-        margin-top: 20px;
-    }
-
-    .avantage {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .large-title {
-        width: 100%;
-    }
-
-    .avantages-commun {
-        grid-template-columns: 100%;
-    }
-
-    .contacts {
-        grid-template-columns: auto;
-    }
-
-    .contact-social {
-        padding: 40px;
-    }
-
-    .header nav{
-        flex-direction: column;
-    }
-
-    nav .nav-item {
-        display: none;
-    }
-
-    .show-nav-item .nav-item {
-        display: block;
-        width: 100%;
-        padding: 20px;
-    }
-
-    header {
-        align-items: flex-start;
-        padding-right: 40px;
-    }
-
-    .show-nav-item {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .show-nav-item a {
-        background-color: white;
-    }
-
-    .show-nav-item .blue-button {
-        background-color: #42A5F5;
-    }
-
-    .avantages-commun ul{
-        padding: 16px;
-    }
-
-    .avantages-commun ul li {
-        font-size: 14px;
-    }
-
-    .float-feature img {
-        width: 100%;
-    }
-
-    .testimonial p {
-        width: 100%;
-    }
-
-    .avantages-commun ul {
-        padding-top: 20px;
-    }
-
-    .contacts {
-        padding-left: 0px;
-        padding-right: 0px;
+    
+    header .show-nav-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 1rem;
+      background-color: #FFFFFF;
+      height: 60vh;   
+      width: 100%;
     }
 }
