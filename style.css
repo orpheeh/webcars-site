@@ -115,12 +115,4 @@ p {
     .humbergers:focus {
         outline: none;
     }
-    
-    .big-title {
-        font-size: 48px;
-    }
-
-    .sub-title {
-        font-size: 24px;
-    }
 }
