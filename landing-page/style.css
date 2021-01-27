@@ -6,6 +6,10 @@ html {
     background: #FFFFFFcc;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 section {
     padding-top: 6rem;
 }
