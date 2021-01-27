@@ -21,283 +21,220 @@
     <header>
         <img src="./assets/img/webcars.png" alt="Logo Webcars" class="logo">
         <nav>
-            <a href="#apropos" class="nav-item" onclick="hideNav()">À propos</a>
-            <a href="#produit" class="nav-item" onclick="hideNav()">Produit</a>
-            <a href="#testimonial" class="nav-item" onclick="hideNav()">Témoignages</a>
-            <a href="#contact" class="nav-item" onclick="hideNav()">Contacts</a>
-            <a href="#equipe" class="nav-item" onclick="hideNav()">Equipe</a>
-            <a href="./landing-page/webcars.apk" class="blue-button nav-item" onclick="hideNav()">Télécharger</a>
+            <a href="#apropos" class="nav-item" onclick="hideMenu()">À propos</a>
+            <a href="#produit" class="nav-item" onclick="hideMenu()">Produit</a>
+            <a href="#testimonial" class="nav-item" onclick="hideMenu()">Témoignages</a>
+            <a href="#contact" class="nav-item" onclick="hideMenu()">Contacts</a>
+            <a href="#equipe" class="nav-item" onclick="hideMenu()">Equipe</a>
+            <a href="./inscription/index.html" class="blue-button nav-item" onclick="hideMenu()">Je m'inscris</a>
+
         </nav>
         <button class="humbergers"><i class="fa fa-bars"></i></button>
     </header>
 
     <main>
-        <section class="main-header">
-            <h1 data-aos="zoom-in" class="big-title">
-                <span style="color:#03273f;">Web</span><span style="color: #41b1f1;">Cars</span></h1>
-            <h2 class="sub-title" style="text-align: center; padding-bottom: 20px; padding-top: 16px;">Adapter le
-                Co-voiturage au contexte africain</h2>
-            <p class="text-gray" style="text-align: center; padding: 16px;">Développer une offre de mobilité fiable et
-                variée, mettant le client au centre de
-                nos préoccupations en lui offrant chaque fois, une expérience de trajet agréable. </p>
-
-            <div class="button-cn">
-                <a data-aos="fade-up" href="./landing-page/webcars.apk" class="blue-button upper-case">Télécharger la version bêta</a>
-                <a data-aos="fade-up" href="#module" class="blue-dark upper-case">Découvrir notre application</a>
-            </div>
-        </section>
-
-        <section id="apropos">
-            <h1 data-aos="fade-up" class="normal-title">Pourquoi faire du Court-voiturage social?</h1>
-
-            <div class="avantages">
-                <div class="avantage">
-                    <h2>Passagers</h2>
-                    <div class="circle">
-                        <img src="./assets/img/passager.jpg" alt="Un passager heureux">
+        <div class="main-container">
+            <section class="main-header">
+                <h1 data-aos="zoom-in" class="big-title">
+                    <span style="color:#03273f;">Web</span><span style="color: #41b1f1;">Cars</span></h1>
+                <h2 class="sub-title" style="text-align: center; padding-bottom: 20px; padding-top: 16px;">Adapter le
+                    Co-voiturage au contexte africain</h2>
+                <p class="text-gray">Développer une offre de mobilité fiable et
+                    variée, mettant le client au centre de
+                    nos préoccupations en lui offrant chaque fois, une expérience de trajet agréable. </p>
+    
+                <a data-aos="fade-up" href="./inscription/index.html" class="blue-button upper-case">Inscrivez vous</a>
+            </section>
+    
+            <section id="apropos">
+                <h1 data-aos="fade-up" class="normal-title">Pourquoi faire du Court-voiturage social?</h1>
+    
+                <div class="avantages">
+                    <div class="avantage">
+                        <h2>Passagers</h2>
+                        <div class="circle">
+                            <img src="./assets/img/passager.jpg" alt="Un passager heureux">
+                        </div>
+                        <ul data-aos="fade-left">
+                            <li><i class="fas fa-calendar-times"></i> Pour planifier vos déplacements à l’avance.</li>
+                            <li><i class="fas fa-car"></i> Pour vous faire transporter par quelqu'un que vous
+                                connaissez.</li>
+                            <li><i class="fas fa-running"></i>Pour évitez les retards liés à la pénurie des transports en
+                                commun.
+                            </li>
+                            <li><i class="fas fa-angry"></i>Pour éviter les bousculades lorsque vous voulez accéder à un
+                                taxi.</li>
+                        </ul>
                     </div>
-                    <ul data-aos="fade-left">
-                        <li><i class="fas fa-calendar-times"></i> Pour planifier vos déplacements à l’avance.</li>
-                        <li><i class="fas fa-car"></i> Pour vous faire transporter par quelqu'un que vous
-                            connaissez.</li>
-                        <li><i class="fas fa-running"></i>Pour éviter les retards liés à la pénurie des transports en
-                            commun.
-                        </li>
-                        <li><i class="fas fa-angry"></i>Pour éviter les bousculades lorsque vous voulez accéder à un
-                            taxi.</li>
-                    </ul>
-                </div>
-
-                <div class="avantage conducteur">
-                    <h2>Conducteurs</h2>
-                    <div class="circle">
-                        <img src="./assets/img/conducteur.jpg" alt="Un conducteur serieux">
+    
+                    <div class="avantage conducteur">
+                        <h2>Conducteurs</h2>
+                        <div class="circle">
+                            <img src="./assets/img/conducteur.jpg" alt="Un conducteur serieux">
+                        </div>
+                        <ul data-aos="fade-right">
+                            <li><i class="fas fa-money-bill-alt"></i>Pour avoir une source de revenus supplémentaires</li>
+                            <li><i class="fas fa-hand-holding-heart"></i>Pour transporter les gens que vous connaissez
+                                autour de vous,
+                                en mettant à leur disposition votre voiture.</li>
+                            <li><i class="fas fa-hands-helping"></i>Pour être solidaire avec les gens que vous connaissez.
+                            </li>
+                        </ul>
                     </div>
-                    <ul data-aos="fade-right">
-                        <li><i class="fas fa-money-bill-alt"></i>Pour avoir une source de revenus supplémentaires</li>
-                        <li><i class="fas fa-hand-holding-heart"></i>Pour transporter les gens que vous connaissez
-                            autour de vous,
-                            en mettant à leur disposition votre voiture.</li>
-                        <li><i class="fas fa-hands-helping"></i>Pour être solidaire avec les gens que vous connaissez.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="avantages-commun">
-                <div class="avantage-illustration">
-                    <img src="./assets/img/route.jpg" alt="Sur la route" class="img-route">
-                </div>
-
-                <ul data-aos="zoom-in">
-                    <li><i class="fas fa-check-circle"></i>Assurez votre sécurité</li>
-                    <li><i class="fas fa-check-circle"></i>Facilitez vos déplacements</li>
-                    <li><i class="fas fa-check-circle"></i>Reduisez votre temps de route</li>
-                    <li><i class="fas fa-check-circle"></i>Soyez en relation avec des personnes fiables et proches
-                        de vous</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="produit">
-            <h1 data-aos="fade-up" class="normal-title">Le Court-voiturage social</h1>
-            
-            <div class="presentation">
-                <div class="court-voiturage-social">
-                    <p class="text-gray">
-                        Contrairement aux solutions de covoiturage classique, le court-voiturage social vous donne la possibilité
-                        de transporter ou de vous faire transporter par quelqu'un ayant un lien social avec vous.
-                    </p>
-        
-                    <p class="text-gray">
-                        Webcars vous permet de créer des groupes de court-voiturage avec des personnes que vous connaissez soit
-                        parce que vous travaillez au même endroit, soit parce que vous fréquentez la même
-                        école, le même collège, le même lycée ou la même université, soit parce que vous habitez le même quartier ou la même
-                        commune...
-                    </p>
-        
-                    <p class="text-gray">Ainsi, vous pouvez faire confiance aux
-                        personnes avec lesquelles WebCars vous met en relation pour effectuer un trajet en toute sécurité et sérénité.
-                    </p>
                 </div>
     
-                <div class="float-feature">
-                    <img src="./assets/img/webcars-features.png" alt="Fonctionalités de WebCars">
+                <div class="avantages-commun">
+                    <ul data-aos="zoom-in">
+                        <li><i class="fas fa-check-circle"></i>Assurez votre sécurité</li>
+                        <li><i class="fas fa-check-circle"></i>Facilitez vos déplacements</li>
+                        <li><i class="fas fa-check-circle"></i>Reduisez votre temps de route</li>
+                        <li><i class="fas fa-check-circle"></i>Soyez en relation avec des personnes fiables et proches
+                            de vous</li>
+                    </ul>
                 </div>
-            </div>
-            
-            <div class="produit-module" id="module">
-                <h1 data-aos="fade-up" class="normal-title">Notre application</h1>
-                
-                <div class="modules">
-                    <div class="module" data-aos="zoom-in">
-                        <div class="module-info">
-                            <h2>Groupe</h2>
-                            <p>Vous permet de créer, de rechercher et d'intégrer des groupes à travers lequels vous pourrez faire du covoiturage avec des personnes connues. Une fois créée, vous pourriez intégrer les passager.e.s que vous connaissez ainsi que les conducteurs avec qui vous avez un lien social. Ce lien peut être de plusieurs ordres, soit amical, professionnel, familial, associatif ou communautaire.</p>
-                            <a href="./landing-page/webcars.apk">Télécharger l'application</a>
+            </section>
+    
+            <section id="produit">
+                <h1 data-aos="fade-up" class="normal-title">Le Court-voiturage social</h1>
+                <p class="text-gray" >
+                    Contrairement aux solution de covoiturage classique, le court-voiturage social vous donne la possibilité
+                    de transporter ou de vous faire transporter par quelqu'un ayant un lien social avec vous.
+                </p>
+    
+                <p class="text-gray">
+                    Webcars vous permet de créer des groupes de court-voiturage avec des personnes que vous connaissez soit
+                    parceque vous travaillez au même endroit, soit parceque vous fréquentez la même
+                    école-collège-lycée-université, soit parceque vos enfants fréquentent le même quartier ou la même
+                    commune...
+                </p>
+    
+                <p class="text-gray">Ainsi vous pouvez faire confiance aux
+                    personnes avec qui WebCars vous met en relation pour effectuer un trajet en toute sécurité et sérénité.
+                </p>
+    
+            </section>
+    
+            <section id="testimonial">
+                <h1 data-aos="fade-up" class="normal-title">WebCars a commencé sur WhatsApp et nous avons des retours
+                    positifs de nos premiers
+                    utilisateurs</h1>
+    
+                <div class="testimonials">
+                    <div class="testimonial" data-aos="fade-right">
+                        <div style="text-align: start;">
+                            <i style="color: #41b1f1;" class="fas fa-quote-left"></i>
                         </div>
-                        <div class="img-cn">
-                            <img src="./landing-page/produit/groupe.jpeg" alt="Groupe">
-                        </div>
-                    </div>
-                    
-                    <div class="module" data-aos="zoom-in">
-                        <div class="module-info">
-                            <h2>Co-voiturage</h2>
-                            <p>À travers le module covoiturage, l'utilisateur (trice) a la possibilité d'utiliser la chatbox pour discuter en situation de retard ou d'imprévu avec le conducteur ou vice-versa. Il a aussi la possibilité de voir son itinéraire sur la carte et voir les déplacements du conducteur.</p>
-                            <a href="./landing-page/webcars.apk">Télécharger l'application</a>
-                        </div>
-                        <div class="img-cn">
-                            <img src="./landing-page/produit/co_voiturage.jpeg" alt="Co-voiturage">
-                        </div>
-                    </div>
-                    
-                    <div class="module" data-aos="zoom-in">
-                        <div class="module-info">
-                            <h2>Urbain</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur repudiandae aliquid itaque, a soluta veritatis magni quidem repellendus cumque, qui obcaecati consequatur harum rem tenetur? Consectetur iusto voluptatem exercitationem officia?</p>
-                            <a href="./landing-page/webcars.apk">Télécharger l'application</a>
-                        </div>
-                        <div class="img-cn">
-                            <img src="./landing-page/produit/urbain.jpeg" alt="Groupe">
-                        </div>
-                    </div>
-                    
-                    <div class="module" data-aos="zoom-in">
-                        <div class="module-info">
-                            <h2>Portefeuille</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur repudiandae aliquid itaque, a soluta veritatis magni quidem repellendus cumque, qui obcaecati consequatur harum rem tenetur? Consectetur iusto voluptatem exercitationem officia?</p>
-                            <a href="./landing-page/webcars.apk">Télécharger l'application</a>
-                        </div>
-                        <div class="img-cn">
-                            <img src="./landing-page/produit/portefeuille.jpeg" alt="Portefeuille">
+                        <p>Je m'appelle Célia,
+                            Et mon expérience est vraiment satisfaisante, la conductrice est vraiment sympa.
+                            On échange sur tous les sujets sans tabou.
+                            Elle est relaxe et vous met tout de suite à l'aise. Je n'hésite pas à recommencer.</p>
+    
+                        <div class="photo-cn">
+                            <div class="photo">
+                                <img src="./assets/img/temoin_celia.jpeg" alt="Photo de l'utilisateur"
+                                    class="circle-avatar">
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="button-cn">
-                    <a href="./landing-page/webcars.apk" class="blue-button upper-case">Télécharger la version bêta</a>
-                </div>
-                
-            </div>
-
-        </section>
-
-        <section id="testimonial">
-            <h1 data-aos="fade-up" class="normal-title">WebCars a commencé sur WhatsApp et nous avons des retours
-                positifs de nos premiers
-                utilisateurs</h1>
-
-            <div class="testimonials">
-                <div class="testimonial" data-aos="fade-right">
-                    <div style="text-align: start;">
-                        <i style="color: #41b1f1;" class="fas fa-quote-left"></i>
-                    </div>
-                    <p>Je m'appelle Célia,
-                        Et mon expérience est vraiment satisfaisante, la conductrice est vraiment sympa.
-                        On échange sur tous les sujets sans tabou.
-                        Elle est relaxe et vous met tout de suite à l'aise. Je n'hésite pas à recommencer.</p>
-
-                    <div class="photo-cn">
-                        <div class="photo">
-                            <img src="./assets/img/temoin_celia.jpeg" alt="Photo de l'utilisateur"
-                                class="circle-avatar">
+    
+                    <div class="testimonial" data-aos="fade-left">
+                        <div style="text-align: start;">
+                            <i style="color: #41b1f1;" class="fas fa-quote-left"></i>
+                        </div>
+                        <p>Ma première expérience s'est bien déroulée.
+                            La conductrice a été coopérante, accueillante et très matinale surtout. Elle est venue à l'heure
+                            convenue. Véhicule confortable . Le concept est surtout motivateur pour moi, car le fait de
+                            savoir que le véhicule nous prend à une certaine heure, on se ménage à y être bien avant. Ce qui
+                            m'a permis d'arriver au travail avant l'heure et avant tous mes collaborateurs.
+                            Bravo et bonne continuation à l'équipe WebCars.</p>
+                        <div class="photo-cn">
+                            <div class="photo">
+                                <img src="./assets/img/temoin_aude.jpeg" alt="Photo de l'utilisateur" class="circle-avatar">
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="testimonial" data-aos="fade-left">
-                    <div style="text-align: start;">
-                        <i style="color: #41b1f1;" class="fas fa-quote-left"></i>
+            </section>
+    
+            <section id="contact">
+                <h1 data-aos="fade-up" class="normal-title">N’hésitez pas à nous contacter</h1>
+    
+                <div class="contacts">
+                    <div class="contact-form">
+                        <h2>Nos coordonnées</h2>
+                        <p><i class="fas fa-map-marker-alt"></i> Rue Pecqueur, Derrière l'immeuble premium BGFi, SING SA,
+                            espace coworking bureau 15
+                        </p>
+                        <a href="mailto:contact@web-cars.ga"><i class="fas fa-envelope"></i> contact@web-cars.ga</a>
+                        <p><i class="fas fa-phone"></i> + 241 077 14 57 20</p>
                     </div>
-                    <p>Ma première expérience s'est bien déroulée. La conductrice a été coopérante, 
-                       accueillante et très matinale surtout. Elle est venue à l'heure convenue [...]. 
-                       Ce qui m'a permis d'arriver au travail avant l'heure et avant tous mes collaborateurs. 
-                       Bravo et bonne continuation à l'équipe WebCars !</p>
-                    <div class="photo-cn">
-                        <div class="photo">
-                            <img src="./assets/img/temoin_aude.jpeg" alt="Photo de l'utilisateur" class="circle-avatar">
+    
+                    <div class="contact-social">
+                        <h2>Suivez nous sur les réseaux sociaux</h2>
+    
+                        <div class="socials">
+                            <a href="https://www.facebook.com/webcarsgab/" style="color: #3B5998;"><i
+                                    class="fab fa-facebook-square"></i></a>
+                            <a href="https://twitter.com/WebCars17?s=09" style="color: #1DA1F2;"><i
+                                    class="fab fa-twitter-square"></i></a>
+                            <a href="https://www.linkedin.com/company/webcars-court-voiturage" style="color: #0072B1;"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/webcars7?r=nametag" style="color: #8A3AB9;"><i
+                                    class="fab fa-instagram-square"></i></a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h1 data-aos="fade-up" class="normal-title">N’hésitez pas à nous contacter</h1>
-
-            <div class="contacts">
-                <div class="contact-form">
-                    <h2>Nos coordonnées</h2>
-                    <p><i class="fas fa-map-marker-alt"></i> Rue Pecqueur, Derrière l'immeuble premium BGFi, SING SA,
-                        espace coworking bureau 15
-                    </p>
-                    <a href="mailto:contact@web-cars.ga"><i class="fas fa-envelope"></i> contact@web-cars.ga</a>
-                    <p><i class="fas fa-phone"></i> + 241 077 14 57 20</p>
-                </div>
-
-                <div class="contact-social">
-                    <h2>Suivez nous sur les réseaux sociaux</h2>
-
-                    <div class="socials">
-                        <a href="https://www.facebook.com/webcarsgab/" style="color: #3B5998;"><i
-                                class="fab fa-facebook-square"></i></a>
-                        <a href="https://twitter.com/WebCars17?s=09" style="color: #1DA1F2;"><i
-                                class="fab fa-twitter-square"></i></a>
-                        <a href="https://www.linkedin.com/company/webcars-court-voiturage" style="color: #0072B1;"><i
-                                class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/webcars7?r=nametag" style="color: #8A3AB9;"><i
-                                class="fab fa-instagram-square"></i></a>
+            </section>
+    
+            <section id="equipe">
+                <h1 data-aos="fade-up" class="normal-title" style="padding-bottom: 80px;">Qui sommes nous ?</h1>
+                <p>Nous sommes une équipe de professionnels aux compétences variées, passionnés du
+                    développement
+                    de nouveaux modes de déplacements, de l'utilisation intélligence et optimal de ceux existants de la
+                    logistique et des
+                    problématiques qui gravitent autour du transport. Nous avons pour objectif, l'amélioration constante des
+                    moyens multimodaux
+                    qui ont une essence positive sur le bien-être des utilisateurs. Nous sommes chaque jour motivés par le
+                    soucis de voir les
+                    utilisateurs se déplacer dans les meilleures conditions, loin des retards, du stress et de la peur. Nous
+                    voulons ces moyens de
+                    transports efficaces et efficients pour permettre à notre économie de se développer dans le bon sens.
+                    Etant animés de la volonté
+                    d'apporter les réponses adéquates aux problématiques soulevées, nous avons ainsi imaginé la solution
+                    webcars qui est un outil
+                    extraordinaire, jubilaire. <br />
+                    Nos valeurs: Vous servir avec considération, honnêteté et réactivité.</p>
+                <div class="equipes">
+                    <div class="person" data-aos="fade-right">
+                        <div class="photo-cn"><img
+                                src="./assets/img/jean_arsene.jpg" alt="Photo membre"></div>
+                        <p class="nom">Jean Arsène HOULA-HOULA</p>
+                        <p class="profil">Ingénieur financier</p>
+                        <p class="role">CEO & Co-Fondateur chez WebCars</p>
+                        <p class="email">ja.houlahoula@web-cars.ga</p>
+                        <p class="linkedin"> <a target="blank" href="https://www.linkedin.com/in/jeanarsenehoulahoula/"
+                                style="color: #0072B1;"><i class="fab fa-linkedin"></i></a></p>
+                    </div>
+                    <div class="person" data-aos="fade-left">
+                        <div class="photo-cn"><img 
+                                src="./assets/img/stephanie_akpaki.jpeg" alt="Photo membre"></div>
+                        <p class="nom">Stéphanie AKPAKI</p>
+                        <p class="profil">Commerciale & Logisticienne</p>
+                        <p class="role">Responsable Commercial & Co-Fondateur chez WebCars</p>
+                        <p class="email">s.akpaki@web-cars.ga</p>
+                        <p class="linkedin"> <a target="blank" href="https://www.linkedin.com/in/stéphanie-akpaki-08a2ba1b5"
+                                style="color: #0072B1;"><i class="fab fa-linkedin"></i></a></p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        <section id="equipe">
-            <h1 data-aos="fade-up" class="normal-title" style="padding-bottom: 80px;">Qui sommes nous ?</h1>
-            <p style="color: #777777;">Nous sommes une équipe de professionnels aux compétences variées, passionnés du
-                développement
-                de nouveaux modes de déplacements, de l'utilisation intélligente et optimale de ceux existants, de la
-                logistique et des
-                problématiques qui gravitent autour du transport. Nous avons pour objectif, l'amélioration constante des
-                moyens multimodaux
-                qui ont une incidence positive sur le bien-être des utilisateurs. Nous sommes chaque jour motivés par le
-                soucis de voir les
-                utilisateurs se déplacer dans les meilleures conditions, loin des retards, du stress et de la peur. Nous
-                voulons ces moyens de
-                transports efficaces et efficients pour permettre à notre économie de se développer dans le bon sens.
-                Etant animés de la volonté
-                d'apporter les réponses adéquates aux problématiques soulevées, nous avons ainsi imaginé la solution
-                webcars qui est un outil
-                extraordinaire et jugulaire. <br />
-                Nos valeurs: Vous servir avec considération, honnêteté et réactivité.</p>
-            <div class="equipes">
-                <div class="person" data-aos="fade-right">
-                    <div class="photo-person"><img style="position: relative; left: 30px; top: 20px;"
-                            src="./assets/img/jean_arsene.jpg" alt="Photo membre"></div>
-                    <p class="nom">Jean Arsène HOULA-HOULA</p>
-                    <p class="profil">Ingénieur financier</p>
-                    <p class="role">CEO & Co-Fondateur chez WebCars</p>
-                    <p class="email">ja.houlahoula@web-cars.ga</p>
-                    <p class="linkedin"> <a target="blank" href="https://www.linkedin.com/in/jeanarsenehoulahoula/"
-                            style="color: #0072B1;"><i class="fab fa-linkedin"></i></a></p>
-                </div>
-                <div class="person" data-aos="fade-left">
-                    <div class="photo-person"><img style="position: relative; top: 50px;"
-                            src="./assets/img/stephanie_akpaki.jpeg" alt="Photo membre"></div>
-                    <p class="nom">Stéphanie AKPAKI</p>
-                    <p class="profil">Commerciale & Logisticienne</p>
-                    <p class="role">Responsable Commercial & Co-Fondateur chez WebCars</p>
-                    <p class="email">s.akpaki@web-cars.ga</p>
-                    <p class="linkedin"> <a target="blank" href="https://www.linkedin.com/in/stéphanie-akpaki-08a2ba1b5"
-                            style="color: #0072B1;"><i class="fab fa-linkedin"></i></a></p>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer>
-        <p class="cpright">&copy; 2020</p>
+        <p class="cpright">&copy; 2021</p>
+        
+        <a href="/politique.html">Politique de confidentialité</a>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
