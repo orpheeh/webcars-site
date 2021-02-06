@@ -2,11 +2,11 @@ header {
     padding: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .logo {
-    width: 200px;
+    width: 8rem;
 }
 
 main {

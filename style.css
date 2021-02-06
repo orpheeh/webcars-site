@@ -78,6 +78,26 @@ p {
     display: none;
 }
 
+a.google-play img {
+    width: 16rem;
+}
+
+.cpright {
+    color: #cccccc;
+    padding-right: 10px;
+    border-right: 1px solid #cccccc;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.flex-end > * {
+    padding: 0.5rem;
+}
+
 @media screen and (max-width: 800px) {
     .normal-title {
         font-size: 24px;

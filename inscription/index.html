@@ -9,15 +9,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Inscription | WebCars - Le Court-voiturage social</title>
 </head>
 
 <body>
 
     <header>
-        <img src="../assets/img/webcars.png" alt="" class="logo">
+        <a href="/">
+            <img src="../assets/img/webcars.png" alt="" class="logo">
+        </a>
     </header>
 
     <main>
@@ -63,9 +65,10 @@
                 <h1>Vous êtes maintenant inscris au service de WebCars, vous pouvez télécharger notre application pour
                     commencer à faire du Co-voiturage social.</h1>
     
-                <em>Pour l'instant l'application n'est pas encore disponible. Elle le sera dans peut de temps, nous vous en
-                    informerons.</em>
-    
+                <div style="text-align: center;">
+                    <a class="google-play" href='https://play.google.com/store/apps/details?id=xyz.orpheenve.webcars&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Disponible sur Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/fr_badge_web_generic.png'/></a>
+                </div>
+                    
                 <h2>Suivez nous sur les réseaux sociaux</h2>
     
                 <div class="socials">
@@ -77,12 +80,19 @@
                             class="fab fa-linkedin"></i></a>
                     <a href="https://www.instagram.com/webcars7?r=nametag" style="color: #8A3AB9;"><i
                             class="fab fa-instagram-square"></i></a>
+                    <a href="https://wa.me/message/64HTTXD6IGXUK1" style="color: #4FCE5D;">
+                        <i class="fab fa-whatsapp-square"></i>
+                    </a>
                 </div>
             </div>
         </div>
 
     </main>
 
+    <footer>
+        <p class="cpright">&copy; 2021 WebCars</p>
+    </footer>
+    
     <script src="../lib/input_manager.js"></script>
     <script src="./script.js"></script>
 </body>
