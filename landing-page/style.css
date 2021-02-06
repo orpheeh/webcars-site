@@ -65,6 +65,10 @@ header .show-nav-item {
     text-align: center;
 }
 
+a.google-play img {
+    width: 16rem;
+}
+
 .avantages {
     display: flex;
     flex-direction: row;

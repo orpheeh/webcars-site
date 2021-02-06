@@ -9,6 +9,19 @@ header {
     width: 200px;
 }
 
+main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-wrapper {
+    width: 900px;
+    max-width: 100%;
+    padding: 1rem;
+}
+
 h1 {
     text-align: center;
     padding: 20px;
@@ -44,14 +57,18 @@ h1 {
 .row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.form .row {
-    width: 50%;
+.form .row .form-group {
+    width: 400px;
+    max-width: 100%;
 }
 
 .form .form-group {
-    width: 50%;
+    width: 100%;
 }
 
 .form-group input:focus {
@@ -106,6 +123,35 @@ div.hide, h1.hide {
     padding: 8px;
 }
 
+.modal {
+    width: 100%;
+    height: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #000000b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-content * {
+    color: white;
+}
+
+.show-modal {
+    height: 100%;
+}
+
 @media screen and (max-width: 900px) {
     h1 {
         font-size: 18px;
@@ -124,3 +170,4 @@ div.hide, h1.hide {
         width: 95%;
     }
 }
+

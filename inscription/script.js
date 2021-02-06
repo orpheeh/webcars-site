@@ -2,37 +2,28 @@ const url = "https://webcars-master.pivot40.tech";
 
 async function postUser() {
 
-    feedback("Veuillez patienter ...");
-
+    showModal()
+    
     const nom = document.querySelector('input[name="nom"]').value;
     const prenom = document.querySelector('input[name="prenom"]').value;
     let telephone = document.querySelector('input[name="telephone"]').value;
     const email = document.querySelector('input[name="email"]').value;
 
-    document.querySelector('label[for="email"]').innerHTML = "";
-    document.querySelector('label[for="telephone"]').innerHTML = "";
-
-    let isCorrect = true;
-    if (!validatePhoneNumberFromGabon(telephone)) {
-        document.querySelector('label[for="telephone"]').innerHTML = "Numéro de téléhone doit être de la forme 0xx yyy zzz"
-        isCorrect = false;
+    if(nom == '' || prenom == '' || (isNaN(telephone) || telephone.length > 9 || telephone.length < 8) || email == ''){
+        hideModal()
+        alert("Veuillez vérifier les informations que vous avez saisi.");
+        return;
     }
-    if (!validateEmail(email)) {
-        document.querySelector('label[for="email"]').innerHTML = "Adresse email incorrecte"
-        isCorrect = false;
-    }
-
-    if (isCorrect) {
-        telephone = ("+241" + telephone).replace(/ /g, "");
-        const isSave = await register({ nom, prenom, telephone, email });
-        if (isSave) {
-            //Afficher la page de demande de code
-            feedback("");
-            displaySuccess();
-        } else {
-            //Informations incorrecte
-            feedback("Cet utilisateur ne peut être créé, veuillez reéssayer", 'red');
-        }
+    
+    telephone = ("+241" + telephone).replace(/ /g, "");
+    const isSave = await register({ nom, prenom, telephone, email });
+    hideModal()
+    if (isSave) {
+        //Afficher la page de demande de code
+        displaySuccess();
+    } else {
+        //Informations incorrecte
+        alert("Cet utilisateur ne peut être créé, veuillez reéssayer");
     }
 }
 
@@ -53,6 +44,14 @@ async function register(data) {
     }
 }
 
+function verifyNumber(e) {
+    if (isNaN(e.value)) {
+        e.value = '';
+    } else if (e.value.length > 9) {
+        e.value = '';
+    }
+}
+
 function feedback(message, color) {
     document.querySelector('.feedback').innerHTML = message;
     if (color) {
@@ -64,4 +63,12 @@ function displaySuccess() {
     document.querySelector('.form').classList.add('hide');
     document.querySelector('.title').classList.add('hide');
     document.querySelector('.success').classList.remove('hide');
+}
+
+function showModal(){
+    document.getElementById('modal').classList.add('show-modal');
+}
+
+function hideModal(){
+    document.getElementById('modal').classList.remove('show-modal');
 }

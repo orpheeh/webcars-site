@@ -21,56 +21,63 @@
     </header>
 
     <main>
-        <h1 class="title">Je crée mon compte WebCars</h1>
+        <div class="main-wrapper">
+            <h1 class="title">Je crée mon compte WebCars</h1>
 
-        <p style="font-size: 16px;">Inscrivez-vous pour être parmi les premiers à recevoir l'application WebCars. Faites aussi en bénéficier à vos contacts en partageant autour de vous, via vos différents réseaux sociaux.</p>
-
-        <p class="feedback"></p>
-
-        <div class="form">
-            <div class="row">
-                <div class="form-group">
-                    <input id="nom" type="text" name="nom" placeholder="Nom">
-                    <label for="nom"></label>
-                </div>
-                <div class="form-group">
-                    <input id="prenom" type="text" name="prenom" placeholder="Prénom">
-                    <label for="prenom"></label>
+            <p style="font-size: 16px;">Inscrivez-vous dès maintenant pour avoir un compte sur WebCars.</p>
+    
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <i class="fa fa-spinner fa-spin" style="font-size:48px"></i>
+                    <p>Veuillez patienter...</p>
                 </div>
             </div>
-            <div class="form-group">
-                <input id="telephone" onkeyup="addSpaceOnNumber(this, this.value)" type="text" name="telephone" placeholder="Numéro de téléphone">
-                <label for="telephone" ></label>
+            
+            <div class="form">
+                <div class="row">
+                    <div class="form-group">
+                        <input id="nom" type="text" name="nom" placeholder="Nom">
+                        <label for="nom"></label>
+                    </div>
+                    <div class="form-group">
+                        <input id="prenom" type="text" name="prenom" placeholder="Prénom">
+                        <label for="prenom"></label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input id="telephone" onkeyup="verifyNumber(this)" type="tel" name="telephone" placeholder="Numéro de téléphone">
+                    <label for="telephone" ></label>
+                </div>
+                <div class="form-group">
+                    <input id="email" type="text" name="email" placeholder="Adresse Email">
+                    <label for="email"></label>
+                </div>
+    
+                <button onclick="postUser()" class="blue-button" id="submit">Inscription</button>
+    
+                <p>En cliquant sur le bouton inscription, vous acceptez la <a href="/politique.html">politique de confidentialité</a> et
+                    les <a href="/condition.html">conditions d'utilisation</a> de WebCars.</p>
             </div>
-            <div class="form-group">
-                <input id="email" type="text" name="email" placeholder="Adresse Email">
-                <label for="email"></label>
-            </div>
-
-            <button onclick="postUser()" class="blue-button" id="submit">Inscription</button>
-
-            <p>En cliquant sur le bouton s'inscrire, vous acceptez la <a href="#">politique de confidentialité</a> et
-                les <a href="#">conditions d'utilisation</a> de WebCars.</p>
-        </div>
-
-        <div class="success hide">
-            <h1>Vous êtes maintenant inscris au service de WebCars, vous pouvez télécharger notre application pour
-                commencer à faire du Co-voiturage social.</h1>
-
-            <em>Pour l'instant l'application n'est pas encore disponible. Elle le sera dans peut de temps, nous vous en
-                informerons.</em>
-
-            <h2>Suivez nous sur les réseaux sociaux</h2>
-
-            <div class="socials">
-                <a href="https://www.facebook.com/webcarsgab/" style="color: #3B5998;"><i
-                        class="fab fa-facebook-square"></i></a>
-                <a href="https://twitter.com/WebCars17?s=09" style="color: #1DA1F2;"><i
-                        class="fab fa-twitter-square"></i></a>
-                <a href="https://www.linkedin.com/company/webcars-court-voiturage" style="color: #0072B1;"><i
-                        class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/webcars7?r=nametag" style="color: #8A3AB9;"><i
-                        class="fab fa-instagram-square"></i></a>
+            
+            <div class="success hide">
+                <h1>Vous êtes maintenant inscris au service de WebCars, vous pouvez télécharger notre application pour
+                    commencer à faire du Co-voiturage social.</h1>
+    
+                <em>Pour l'instant l'application n'est pas encore disponible. Elle le sera dans peut de temps, nous vous en
+                    informerons.</em>
+    
+                <h2>Suivez nous sur les réseaux sociaux</h2>
+    
+                <div class="socials">
+                    <a href="https://www.facebook.com/webcarsgab/" style="color: #3B5998;"><i
+                            class="fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com/WebCars17?s=09" style="color: #1DA1F2;"><i
+                            class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.linkedin.com/company/webcars-court-voiturage" style="color: #0072B1;"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/webcars7?r=nametag" style="color: #8A3AB9;"><i
+                            class="fab fa-instagram-square"></i></a>
+                </div>
             </div>
         </div>
 
